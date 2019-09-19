@@ -1,0 +1,152 @@
+.w-layout-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
+.section {
+  height: auto;
+  padding: 3em 4em;
+  background-color: #fafafa;
+}
+
+.grid {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.info-holder {
+  position: relative;
+  height: auto;
+  min-height: 214px;
+  padding: 24px 16px;
+  background-color: #fff;
+}
+
+.profile-image-holder {
+  height: auto;
+}
+
+.text-block {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+
+.info-holder-text {
+  font-size: 16px;
+}
+
+.text-block-2 {
+  height: auto;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.text-block-3 {
+  margin-top: 8px;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.text-block-4 {
+  padding-top: 4px;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.text-block-5 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 44px;
+  bottom: 31px;
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.text-block-6 {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.race-number {
+  position: absolute;
+  left: auto;
+  top: 11%;
+  right: 8%;
+  bottom: auto;
+}
+
+.race-number.red {
+  top: 24px;
+  right: 16px;
+  color: #f90102;
+}
+
+.race-number.blue {
+  top: 24px;
+  right: 16px;
+  color: #0054d0;
+}
+
+.driver-header {
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.image {
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 991px) {
+  .grid {
+    grid-auto-flow: row;
+    grid-column-gap: 23px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .race-number.red {
+    position: static;
+    text-align: right;
+  }
+  .race-number.blue {
+    position: static;
+    text-align: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 479px) {
+  .section {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
